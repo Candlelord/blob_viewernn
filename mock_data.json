@@ -1,0 +1,12 @@
+{
+    "nodes": [
+        {"id": "node1", "status": "online", "capacity": 100, "uptime": 99, "blobCount": 10, "type": "node"},
+        {"id": "node2", "status": "offline", "capacity": 200, "uptime": 75, "blobCount": 5, "type": "node"},
+        {"id": "blob1", "size": 30, "redundancy": 3, "duration": "30 days", "type": "blob"},
+        {"id": "blob2", "size": 50, "redundancy": 2, "duration": "10 days", "type": "blob"}
+    ],
+    "links": [
+        {"source": "node1", "target": "blob1"},
+        {"source": "node2", "target": "blob2"}
+    ]
+}
